@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500&family=Rubik+Doodle+Shadow&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 50px; 
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #5b5d61 !important; /* Light background */
+            color: #f5f8fa !important; 
+            font-weight: 500;
+            height: 15%;
+        }
+
+        .navbar a {
+            color: #ffffff !important;
+            /* Set navbar links color to white */
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            color: #00bcd4 !important;
+            /* Change color on hover */
+            transform: translateY(-3px);
+            /* Move link up on hover */
+        }
+
+        .navbar a.active {
+            color: #ff4081 !important;
+            /* Change color for active link */
+        }
+
+
+        #home {
+            background-image: url('./assets/images/portfolio\ background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: #fff; 
+            padding: 200px 0; /* Adjust as needed */
+            text-align: center;
+        }
+
+        #home h1 {
+            font-size: 3em;
+            color: #f9fcfc; 
+            font-family: 'Rubik Doodle Shadow', system-ui;           }
+
+        #home h1 span {
+            color: #6fdaf5; /* Color for the span within h1 */
+        }
+
+        .header-text p {
+            color: #41c9f3; 
+            font-family: 'League Spartan', sans-serif;
+            
+        }
+
+        .download-btn {
+            display: inline-block;
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 20px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+
+        .download-btn:hover {
+            background-color: #007bb5;
+        }
+
+
+        /* about */
+
+        .about {padding: 50px 0 100px;}
+.about-content {padding-top: 100px;}
+/*.single-about-txt*/
+.single-about-txt h3 {
+    font-size:20px;
+    color: #3c4258;
+    text-transform: initial;
+    line-height: 1.8;
+}
+.single-about-txt p {
+    font-size: 18px;
+    color: #999fb3;
+    padding: 35px 0 43px;
+    border-bottom: 1px solid #999fb3;
+}
+.single-about-add-info {
+    margin: 35px 0;
+}
+.single-about-add-info h3 {
+    color: #636a82;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.single-about-add-info p {
+    font-weight:  300;
+    border:  0;
+    padding: 0;
+    margin-top: 3px;
+    
+}
+
+/* education */
+
+.education {
+    background:  #ecf1f8;
+    padding-top:  50px;
+    font: size 15px; ;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+.education-horizontal-timeline {
+    padding: 80px 0;
+}
+
+/*.education-horizontal-timeline*/
+.education-horizontal-timeline .col-sm-4 {
+    padding:0 2px;
+}
+
+.single-horizontal-timeline .experience-time h3{
+    text-transform: capitalize;
+    fon
+}
+.single-horizontal-timeline .experience-time h3 span{
+    
+}
+.single-horizontal-timeline .timeline-content h5 {
+    margin: 15px 0;
+}
+.single-horizontal-timeline p {
+    color: #57cae7;max-width: 335px;
+}
+
+/*.timeline-horizontal-border*/
+.timeline-horizontal-border {
+    display:  flex;
+    align-items: center;
+    padding: 26px 0 30px;
+}
+.timeline-horizontal-border i {
+    font-size:  8px;
+    color: #2cdaf9;
+    margin-right:  5px;
+}
+span.single-timeline-horizontal {
+    display:  inline-block;
+    background: #b2c1ce;
+    height:  1px;
+    width: 380px;
+}
+span.single-timeline-horizontal.spacial-horizontal-line {
+    width: 88px;
+}
+
+
+/* skills */
+
+
+
+.skill-content{padding: 50px 0 80px;}
+.single-skill-content{padding-top: 100px;}
+.section-heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e5ebf2;
+}
+.single-progress-txt {
+    display: flex;
+}
+.single-progress-txt h3 {
+    width: 10%;
+    color: #39e2f8;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+.barWrapper {
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.progress {
+    border-radius:3px;
+    overflow: visible;
+    background: #dbe9f7;
+    height:8px;
+    margin-top: 15px;
+    width: 85%;
+    margin-bottom: 37px;
+}
+/* Updated CSS for progress bars */
+.progress-bar {
+    border-radius: 3px;
+    -webkit-transition: width 1.5s ease-in-out;
+    -ms-transition: width 1.5s ease-in-out;
+    -moz-transition: width 1.5s ease-in-out;
+    -o-transition: width 1.5s ease-in-out;
+    transition: width 1.5s ease-in-out;
+    background: linear-gradient(to right, #21e5f3 0%, #21e5f3 var(--percentage), #dbe9f7 var(--percentage), #dbe9f7 100%);
+}
+
+.tooltip{
+   position:relative;
+   float:right;
+}
+.tooltip > .tooltip-inner {
+   background-color: transparent;
+   padding: 1px 5px;
+   color: #b636ff;
+   font-weight: 500;
+   font-size: 12px;
+   border-radius: 0;
+}
+.popOver + .tooltip > .tooltip-arrow {
+   border-left: 6px solid transparent;
+   border-right: 6px solid transparent;
+   border-top: 6px solid #fff;
+   bottom: -1px;
+   transform: translateX(-50%);
+   margin-left: 0;
+}
+
+/* contact */
+
+
+
+.contact {
+    background: #dae8f8;
+    padding: 50px 0 100px;
+}
+
+.contact-content {
+    padding-left: 40px; 
+}
+
+.single-contact-box {
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+.contact-form  .form-group {
+    margin-bottom: 20px;
+    
+}
+.contact-form .form-control {
+    padding: 25px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    box-shadow: none;
+    outline: 0!important;
+    background: #fff;
+    color: #636a82;
+    resize: none;
+}
+
+/*--contct button--*/
+.contact-form .single-contact-btn {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:50px;
+    text-transform:capitalize;
+    
+    margin-top: 3px;
+    background: #36d7ff;
+    border: 1px solid #36d7ff;
+    cursor:pointer;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+     -webkit-transition: .5s; 
+    -moz-transition:.5s; 
+    -ms-transition:.5s; 
+    -o-transition:.5s;
+    transition: .5s;
+}
+.contact-form .single-contact-btn .contact-btn ,
+.contact-form .single-contact-btn .contact-btn:focus {
+    margin-top:0px;
+    outline: 0 !important;
+    border:0;
+    color: #fff;
+    border-radius: 0px;
+    font-size:14px;
+    -webkit-transition: .5s; 
+    -moz-transition:.5s; 
+    -ms-transition:.5s; 
+    -o-transition:.5s;
+    transition: .5s;
+    
+}
+.single-contact-btn:hover{
+    background: #1ce5ff;
+    border: 1px solid #2af1f1;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+
+/*--contct button--*/
+
+/* contact-adress */
+.contact-add-head h3 {
+    font-size:  24px;
+    color:  #3c4258;
+}
+.contact-add-head p {
+    font-size:  16px;
+    text-transform: capitalize;
+    color:  #636a82;
+    font-weight:  300;
+    margin-top:  6px;
+}
+.contact-adress{
+    padding-left: 200px;
+}
+
+/*.contact-add-info */
+.contact-add-info { margin: 42px 0 52px;}
+.single-contact-add-info h3 {
+    color:  #636a82;
+    font-weight:  500;
+}
+.single-contact-add-info p {
+    color:  #999fb3;
+    font-size:  16px;
+    margin-top:  18px;
+}
+.single-contact-add-info {
+    margin-bottom:  26px;
+}
+/*.contact-add-info */
+
+
+
+.hm-footer-copyright p{
+    color: #888ea5;
+    text-transform: capitalize;
+    padding: 38px 0;
+}
+.hm-footer-copyright p a {color: #888ea5;}
+
+
+
+/* experience */
+
+
+.experience {
+    padding: 50px 0 100px;
+    border-top: 1px solid #e5ebf2;
+
+}
+.experience-content {padding-top: 100px;}
+.single-timeline-box {margin-bottom: 75px;}
+
+/*experience-time*/
+.experience-time {
+    position: relative;
+}
+.experience-time h2 {
+    font-weight: 400;
+}
+.experience-time h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #636a82;
+    margin-top: 14px;
+    text-transform: uppercase;
+}
+/*experience-time*/
+
+/*main-timeline*/
+.main-timeline{
+    position: relative;
+}
+.main-timeline:before{
+    content: "";
+    width: 2px;
+    height: 84%;
+    background: #b2c1ce;
+    position: absolute;
+    top: 1.5%;
+    left: 45.8%;
+    z-index: -1;
+}
+.main-timeline .timeline{
+    position: relative;
+}
+
+.timeline-content span>i, .experience-time span>i {
+    color: #2cc9f9;
+    position: absolute;
+    font-size: 10px;
+    left: -14.5%;
+    z-index: 1;
+}
+.timeline-content h4.title {
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.timeline-content {
+    border-bottom: none; 
+}
+.timeline-content h5 {
+    color: #636a82;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 18px 0 20px;
+}
+.main-timeline .description {
+    font-size: 14px;
+    color: #999fb3;
+}
+.main-timeline .timeline-content.right{
+    float: right;
+    text-align: left;
+}
+.timeline-single-before:before {
+    content: '';
+    top: 57px;
+    left: -3px;
+    position: absolute;
+    width: 100%;
+    height:400px;
+    border-left:15px solid #fff;
+}
+
+.experience-time-responsive{display: none;}
+
+
+
+ 
+       /* Add your custom styles here */
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a style="font-family: 'Permanent Marker', cursive; font-size: 30px;" class="navbar-brand" href="#home">SR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="header-text">
+                        <h1>HI <span>,</span> I AM  <br>SREERAG K S <span>.</span>   </h1><br><br>
+                        <p>ui/ux designer and web developer</p><br>
+                        <a class="download-btn" href="assets/Download/SreeragResume.pdf" download>Download Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About -->
+
+    <section id="about" class="about">
+        <div class="section-heading text-center">
+            <h2>ABOUT ME</h2>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="about-content">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="single-about-txt">
+                            <h3>
+                                I am a dedicated Computer application student currently interning in Web development at Luminar Technohub, Kochi.
+                            </h3>
+                            <p>
+                                I am looking forward to obtain a challenging and responsible position in the area of web development and ui/ux design where my knowledge and ability will be utilized.Holding a bachelor Degree from Mahatma Gandhi University. Eager to contribute his skills and abilities, and poised to make a meaningful impact in the world of web development and designing 
+                            </p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="single-about-add-info">
+                                        <h3>phone</h3>
+                                        <p>+91 6235466084</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="single-about-add-info">
+                                        <h3>email</h3>
+                                        <p>Sreeragks2002@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="single-about-add-info">
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    
+    <section id="education" class="education">
+        <div class="section-heading text-center">
+            <h2 style="font-family: 'Poppins', sans-serif;">EDUCATION</h2><hr>
+        </div>
+        <div class="container">
+            <div class="education-horizontal-timeline">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2020 - 2023</h2>
+                                <h3>Bachelor <span>of </span> computer application</h3>
+                            </div>
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal"></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Mahatma Gandhi University
+                                    </h4>
+                                    <h5>MES College, Kerala</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2018 - 2020</h2>
+                                <h3>Bio <span>-</span> Maths</h3>
+                            </div>
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal"></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        NSS Higher Secondary School
+                                    </h4>
+                                    <h5>Parakkadavu, Kerala</h5>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="single-horizontal-timeline">
+                            <div class="experience-time">
+                                <h2>2017 - 2018</h2>
+                                <h3>10 <span> th</span> High School</h3>
+                            </div>
+                            <div class="timeline-horizontal-border">
+                                <i class="fa fa-circle" aria-hidden="true"></i>
+                                <span class="single-timeline-horizontal spacial-horizontal-line
+                                "></span>
+                            </div>
+                            <div class="timeline">
+                                <div class="timeline-content">
+                                    <h4 class="title">
+                                        Saraswathy Vidyanikethan
+                                    </h4>
+                                    <h5>Chengamanad, Kerala</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills" class="skills">
+        <div class="skill-content">
+            <div class="section-heading text-center">
+                <h2>skills</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="single-skill-content">
+                            <div class="barWrapper">
+                                <span class="progressText">USER INTERFACE DESIGN</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated"role="progressbar" aria-label="Animated striped example" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+                                              
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">REACT</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                       <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+                                            
+                                       </div>
+                                    </div>
+                                    <h3>85%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">HTML</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                       <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+                                           
+                                       </div>
+                                    </div>
+                                    <h3>97%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">RESPONSIVE WEB DESIGN</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                       <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+                                            
+                                       </div>
+                                    </div>
+                                    <h3>90%</h3>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="single-skill-content">
+                            <div class="barWrapper">
+                                <span class="progressText">COMMUNICATION</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+                                            
+                                        </div>
+                                    </div>
+                                    <h3>90%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">ANGULAR</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                       <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+                                            
+                                       </div>
+                                    </div>
+                                    <h3>85%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText">CSS</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                       <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+                                           
+                                       </div>
+                                    </div>
+                                    <h3>97%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                            <div class="barWrapper">
+                                <span class="progressText"> creativity</span>
+                                <div class="single-progress-txt">
+                                    <div class="progress ">
+                                       <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+                                            
+                                       </div>
+                                    </div>
+                                    <h3>90%</h3>	
+                                </div>
+                            </div><!-- /.barWrapper -->
+                        </div>
+                    </div>
+                </div>
+            </div>			
+        </div>
+
+</section>
+
+   
+    		<!--experience start -->
+		<section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>2023 - Present</h2>
+													<h3>Web developer Intern</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															Luminar Technohub
+														</h4>
+														<h5>Kakkanad, Kerala</h5>
+														<p class="description">
+															completed the course Mearn stack web development and work at Luminar Technohub as an intern.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								
+							</ul>
+						</div><!--.main-timeline-->
+					</div><!--.experience-content-->
+			</div>
+
+		</section>
+
+   
+
+    <!-- Contact Section -->
+
+  		<!--contact start -->
+          <section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>CONTACT ME</h2><hr>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-form">
+									<form>
+										<div class="row">
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+											<div class="col-sm-6 col-xs-12">
+												<div class="form-group">
+													<input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="form-group">
+													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
+												</div><!--/.form-group-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+										<div class="row">
+											<div class="col-sm-12">
+												<div class="single-contact-btn">
+													<a style="text-decoration: none;" class="contact-btn" href="#" role="button">submit</a>
+												</div><!--/.single-single-contact-btn-->
+											</div><!--/.col-->
+										</div><!--/.row-->
+									</form><!--/form-->
+								</div><!--/.contact-form-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>Sreerag K S</h3>
+										<p>Web developer Intern</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>phone</h3>
+											<p>+91 6235466084</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>Sreeragks2002@gmail.com</p>
+										</div>
+										
+                                        <div class="single-contact-add-info">
+                                            <h3>Social</h3>
+                                            <p>
+                                              <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                                              <a href="www.linkedin.com/in/sreerag-k-s-a214ab2a1" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                              <a href="https://www.instagram.com/your_username" target="_blank"><i class="fab fa-instagram"></i></a>
+                                            </p>
+                                          </div>
+									</div>
+								</div><!--/.contact-adress-->
+								
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section>
+    <!-- Footer -->
+    <footer class="text-dark text-center py-3">
+        <p>&copy; 2024 Sreerag. Design and Developed</p>
+    </footer>
+
+
+    <!-- Script to set --percentage variable dynamically -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var progressBars = document.querySelectorAll('.progress-bar');
+
+        progressBars.forEach(function(bar) {
+            var percentage = parseInt(bar.getAttribute('aria-valuenow'));
+            bar.style.setProperty('--percentage', percentage);
+        });
+    });
+</script>
+
+
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS (optional, but required for toggling dropdowns) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-sxI/Py0Ft3GW6J0VRB1BtLlTR3xj2TssDErlyH+JgJtm3g9qIMluzmv8gFaF7xkg" crossorigin="anonymous"></script>
+
+</body>
+</html>
